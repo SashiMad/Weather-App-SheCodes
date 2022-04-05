@@ -1,0 +1,15 @@
+h1,
+h2,
+form {
+  text-align: center;
+}
+.weatherapp {
+  border: 1px solid #183154;
+  padding: 20px;
+  margin: 15px auto;
+  border-radius: 6px;
+  max-width: 600px;
+}
+i {
+  padding-left: 25px;
+}
