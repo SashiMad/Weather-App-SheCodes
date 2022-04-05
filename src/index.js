@@ -16,7 +16,7 @@ let days = [
   "Wednesday",
   "Thursday",
   "Friday",
-  "Saturday"
+  "Saturday",
 ];
 now.innerHTML = `${days[dayIndex]} ${hours}:${minutes}`;
 
