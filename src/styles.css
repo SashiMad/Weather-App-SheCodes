@@ -1,12 +1,7 @@
-h1,
-h2,
-form {
-  text-align: center;
-}
 .weatherapp {
-  border: 1px solid #183154;
+  border: 1px solid #dadde1;
   padding: 20px;
-  margin: 15px auto;
+  margin: 30px auto;
   border-radius: 6px;
   max-width: 600px;
 }
@@ -15,4 +10,37 @@ i {
 }
 .footer {
   text-align: center;
+  font-size: 12px;
+  color: #828388;
+}
+.now,
+.attributes,
+.description {
+  color: #828388;
+}
+h1 {
+  font-size: 44px;
+  margin-bottom: 0;
+  padding-top: 20px;
+}
+.forecast {
+  padding-top: 30px;
+}
+.currentWeather {
+  position: relative;
+  padding-left: 0px;
+  top: -40px;
+}
+.currentDegree,
+.weatherIcon {
+  font-size: 70px;
+}
+.units {
+  position: relative;
+  font-size: 16px;
+  top: -38px;
+}
+.minMax {
+  position: relative;
+  right: -46px;
 }
