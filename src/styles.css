@@ -17,6 +17,10 @@ i {
 .attributes,
 .description {
   color: #828388;
+  line-height: 16px;
+}
+.description {
+  text-transform: capitalize;
 }
 h1 {
   font-size: 44px;
@@ -29,7 +33,7 @@ h1 {
 .currentWeather {
   position: relative;
   padding-left: 0px;
-  top: -40px;
+  top: -50px;
 }
 .currentDegree,
 .weatherIcon {
@@ -39,8 +43,4 @@ h1 {
   position: relative;
   font-size: 16px;
   top: -38px;
-}
-.minMax {
-  position: relative;
-  right: -46px;
 }
