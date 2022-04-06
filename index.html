@@ -44,14 +44,25 @@
                     </button>
               </div>
             </form>
-        <br />
+          <br/>
+        <br/>
+        <hr>
         <h1 id="city-name">
           Berlin
-          <br />
-          Germany
         </h1>
-        <h2>
-          <span id="currentTemp"> 7 </span>
+        <div class="row">
+          <div class="col-6">
+          <span id="now"></span>
+          <span id="description">clear</span>
+          <div class="col-6">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> m/h</li>
+              </ul>
+            </div>
+        </div>
+        <div class="col-6">
+         <span id="currentTemp"> 7 </span>
           <a href="number" id="celsius-link">°C</a> |
           <a href="number" id="fahrenheit-link">°F</a>
           <br />
@@ -60,8 +71,9 @@
           <i class="fa-solid fa-sun"></i>
           <br />
           12°C/5°C
-        </h2>
-        <br />
+         </div>
+        </div>
+        </div>
         <div class="row">
           <div class="col">
             <i class="fa-solid fa-sun"></i>
@@ -98,7 +110,7 @@
         >
           Open-source code 
         </a>
-        , by Sashi Madleniak
+         by Sashi Madleniak
       </p>
     <script src="src/index.js"></script>
   </body>
