@@ -21,6 +21,7 @@ let days = [
 now.innerHTML = `${days[dayIndex]} ${hours}:${minutes}`;
 
 function showCityTemp(response) {
+  celsiusTemp = response.data.main.temp;
   document.querySelector("#city-name").innerHTML = response.data.name;
   document.querySelector("#currentTemp").innerHTML = Math.round(
     response.data.main.temp
@@ -69,14 +70,20 @@ let fahrenheit = document.querySelector("#fahrenheit-link");
 fahrenheit.addEventListener("click", toFahrenheit);
 function toFahrenheit(event) {
   event.preventDefault();
+  celsius.classList.remove("active");
+  fahrenheit.classList.add("active");
+  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
   let currentTemp = document.querySelector("#currentTemp");
-  currentTemp.innerHTML = "66";
+  currentTemp.innerHTML = Math.round(fahrenheitTemp);
 }
 
 let celsius = document.querySelector("#celsius-link");
 celsius.addEventListener("click", toCelsius);
 function toCelsius(event) {
   event.preventDefault();
+  celsius.classList.add("active");
+  fahrenheit.classList.remove("active");
   let currentTemp = document.querySelector("#currentTemp");
-  currentTemp.innerHTML = "19";
+  currentTemp.innerHTML = Math.round(celsiusTemp);
 }
+let celsiusTemp = null;

@@ -44,3 +44,11 @@ h1 {
   font-size: 16px;
   top: -38px;
 }
+.currentWeather .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+  text-decoration: none;
+}
+.currentWeather .active:hover {
+  text-decoration: none;
+}
