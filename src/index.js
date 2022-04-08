@@ -20,6 +20,25 @@ let days = [
 ];
 now.innerHTML = `${days[dayIndex]} ${hours}:${minutes}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+      <div class="col-2">${day}
+            <div><i class="fa-solid fa-sun"></i></div>
+           <span class="max-forecast">20°</span> <span class="min-forecast">10°</span>
+          </div>
+  `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
+}
 function showCityTemp(response) {
   celsiusTemp = response.data.main.temp;
   document.querySelector("#city-name").innerHTML = response.data.name;
@@ -87,3 +106,4 @@ function toCelsius(event) {
   currentTemp.innerHTML = Math.round(celsiusTemp);
 }
 let celsiusTemp = null;
+displayForecast();
