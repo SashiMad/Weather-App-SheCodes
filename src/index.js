@@ -91,11 +91,17 @@ searchedCity.addEventListener("submit", search);
 function search(event) {
   event.preventDefault();
   let city = document.querySelector("#city-input").value;
+  searchCity(city);
+}
+
+function searchCity(city) {
   let units = "metric";
   let apiKey = "4905108a47943490a132d537d96a7012";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(showCityTemp);
 }
+
+searchCity("Paris");
 
 function getLocation(position) {
   let apiKey = "4905108a47943490a132d537d96a7012";
