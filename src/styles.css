@@ -4,6 +4,17 @@
   margin: 30px auto;
   border-radius: 6px;
   max-width: 600px;
+  background: #ffffff;
+  box-shadow: 10px 5px 5px #f2f0f9;
+}
+.search-bar {
+  background: #f9f7fe;
+}
+.search-button {
+  background: #d6d6d6;
+}
+body {
+  background: #f9f7fe;
 }
 i {
   text-align: center;
